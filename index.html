@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(18, 18, 62);
+
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            font-size: 1.04rem;
+            color: rgb(153, 153, 226);
+        }
+
+        hr {
+            border: o;
+            background: rgb(134, 134, 225);
+            height: 1.2px;
+            margin: 60px 0;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 130px 0;
+            align-items: center;
+
+        }
+
+        .firstSection>div {
+            width: 30%
+        }
+
+        .leftSection {
+
+            font-size: 3rem;
+
+        }
+
+        .rightSection {
+
+            width: 80%;
+            margin: 50px 0;
+        }
+
+        .purple {
+            color: rgb(170, 107, 228);
+
+        }
+
+        #element {
+            color: rgb(170, 107, 228);
+        }
+
+        .secondSection {
+            margin: auto;
+            max-width: 80vw;
+            height: 80vh;
+
+        }
+
+        .secondSection h1 {
+            font-size: 1.9rem;
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        .secondSection .box {
+            background-color: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+
+
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Priyanshu Patil's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Priyanshu Patil </span>
+                and <div>I am a passionate</div>
+
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="bg.png" alt="">
+            </div>
+        </section>
+        <hr />
+
+
+    </main>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+
+                <div class="about-col-2">
+                    <h1 class="sub-title" style="color:white">About Me</h1><br>
+                    <p>Hello I'm Priyanshu Patil and I am from Pathakhera a town situated in the Betul district<br><br>
+                        Recently completed my bachelor's degree in computer science from RGPV university and currently
+                        looking for a job in the IT industry and I am comfortable working both independently and in
+                        teams</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span><b></b>HTML</b></span></li><br>
+                            <li><span><b></b>Core Java</b></span></li><br>
+                            <li><span><b></b>CSS</b></span></li><br>
+                            <li><span><b></b>Java Script</b></span></li><br>
+                            <li><span><b></b>C++</b></span></li><br>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>2019-2023 (B.Tech)</span><br>Shri balaji institute pf technology and management
+                                Betul
+                                <br>
+                                7.98
+                            </li>
+                            <li><span>2018-2019 (XII)</span><br>Govt. Girls higher secondary school Pathakhera<br>76%
+                            </li>
+                            <li><span>2016-2017 (X)</span><br>Govt. Girls higher secondary school Pathakhera<br>88%</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <!-- --------------Services-------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Technical skills</h2>
+                    <ul>
+                        <li>C++</li><br>
+                        <li>Core Java</li><br>
+                        <li>JavaScript</li><br>
+                        <li>HTML,CSS</li><br>
+                        <li>Frontend Development</li><br>
+                        <li>Android App Development</li><br>
+                    </ul>
+                </div>
+                <div>
+                    <h2>Certifications & Publication</h2>
+                    <ul>
+                        <li><a href="#"> Machine Learning for Python certification by Great Learning Academy
+                                • Energy Literacy training certification by Energy Swaraj foundation. </a></li>
+                        <li><a href="#">Network Security certification by Great Learning Academy
+                                • Energy Literacy training certification by Energy Swaraj foundation.</a>
+                        </li>
+
+                        <li><a href="#">Energy Literacy training certification by Energy Swaraj foundation </a></li>
+                        <li><a href="https://www.ijirmps.org/papers/2023/1/230050.pdf">"Conversational Voice Controlled React News Application Using Alan AI"Published
+                                in IJIRMPS (E-ISSN:
+                                2349-7300), Volume 11, Issue 1, January-February 2023. Impact Factor: 9.901</a></li>
+
+
+                    </ul><br>
+
+                    <a href="#"><b>CLICK HERE FOR
+                            MORE</b> </a>
+                </div>
+                <div>
+                    <!-- <i class="fab fa-app-store"></i>-->
+                    <h2>Achievements & Internships</h2>
+                    <ul>
+                        <li>Web Development Intern in Code Alpha </li>
+                    </ul><br>
+                    <li>from 1 July to 31 July</li><br>
+                    <ul>
+                        <li>GATE(2022) Qualified</li>
+                    </ul><br>
+                    <li>IIT Kharagpur</li><br>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    </div>
+    </div>
+    <hr />
+    <!-- ------------projects -------------------- -->
+    <div id="projects">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Pri2.png">
+                    <div class="layer">
+                        <h3>Snake Game in Java</h3>
+                        <p>This is GUI based classic Snake Game in Java. The player can control the snake with the arrow
+                            keys and eat food as it grows on the screen</p>
+                        <a href="https://github.com/Pri124/Snake-Game-In-Java-_Sync-intern"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Pri4.png">
+                    <div class="layer">
+                        <h3>My Personal Portfolio</h3>
+                        <p>This is a portfolio website is a unique way to showcase my work and let others know about myself.
+                            It’s like an evergreen platform for my projects, case studies, and information about me.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Pri3.webp">
+                    <div class="layer">
+                        <h3>Conversational Voice Controlled React News Application Using Alan AI</h3>
+                        <p>This is a web application that displays live news based on category, search terms, news sources,
+                            and general headlines.</p>
+                        <a href="#"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div><br><br><br><br><br><br>`
+    <hr />
+    <!-- ------------------------ contact --------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope" style="color: #da223b;"></i>pp1307480@gmail.com</p>
+                    <p><i class="fa fa-phone-square"></i>8827674062</p>
+                    <div class="social-icons"><br>
+
+
+                        <a href="https://www.linkedin.com/in/priyanshu-patil-784399233"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/Pri124"><i class="fa-brands fa-github"></i></a>
+                    </div><br><br>
+                    <a href="Priyanshu Patil  - Resume.pdf" download class="btn btn-primary">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea naem="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <footer>
+                <p>Copyright © created Priyanshu</p>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Java Developer', 'Software Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/8ceb11f307.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
